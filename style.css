@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: #000;
+    height: 6000px; /* 수직스크롤 거리 */
+    scroll-behavior: smooth;
+}
+.container{
+    position: fixed; /* 스크롤해도 컨테이너가 브라우저의 특정 위치에 고정되도록 함 */
+    display: flex;
+    justify-content: space-around;
+    top: 20vh;
+    /* border: 3px solid red; */
+    width: 6000px; /* 수평스크롤 거리 */
+    transition: transform 0.15s;
+    will-change: transform;
+}
+.box{
+    position: relative;
+    /* border: 1px solid blue; */
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.one{
+    background-image: url(./imgs/img-1.jpg);
+}
+.two{
+    background-image: url(./imgs/img-2.jpg);
+}
+.three{
+    background-image: url(./imgs/img-3.jpg);
+}
+.four{
+    background-image: url(./imgs/img-4.jpg);
+}
+.five{
+    background-image: url(./imgs/img-5.jpg);
+}
+.six{
+    background-image: url(./imgs/img-6.jpg);
+}
